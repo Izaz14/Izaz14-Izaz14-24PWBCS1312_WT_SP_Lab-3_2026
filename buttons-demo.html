@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Styled Buttons Demo</title>
+<style>
+body{font-family: Arial;text-align:center;background:#f4f4f4;padding:40px;}
+h1{margin-bottom:30px;}
+.btn{border:none;padding:12px 25px;margin:10px;font-size:16px;cursor:pointer;border-radius:6px;transition:0.3s;}
+.small{padding:8px 16px;font-size:14px;}
+.medium{padding:12px 25px;}
+.large{padding:16px 35px;font-size:20px;}
+.primary{background:#3498db;color:white;}
+.success{background:#2ecc71;color:white;}
+.danger{background:#e74c3c;color:white;}
+.round{border-radius:30px;}
+.square{border-radius:0;}
+.gradient{background:linear-gradient(to right, #ff7e5f, #feb47b);color:white;}
+.shadow{box-shadow:0 4px 8px rgba(0,0,0,0.3);}
+.btn:hover{transform:translateY(-3px);opacity:0.9;}
+.btn:focus{outline:3px solid #333;}
+.btn:disabled{background:gray;cursor:not-allowed;opacity:0.6;box-shadow:none;}
+</style>
+</head>
+<body>
+<h1>Styled Buttons Collection</h1>
+<h2>Button Sizes</h2>
+<button class="btn primary small">Small Button</button>
+<button class="btn success medium">Medium Button</button>
+<button class="btn danger large">Large Button</button>
+
+<h2>Button Shapes</h2>
+<button class="btn primary round">Round Button</button>
+<button class="btn success square">Square Button</button>
+
+<h2>Gradient & Shadow Buttons</h2>
+<button class="btn gradient shadow">Gradient Button</button>
+<button class="btn primary shadow">Shadow Button</button>
+
+<h2>Disabled Button</h2>
+<button class="btn danger" disabled>Disabled Button</button>
+</body>
+</html>
