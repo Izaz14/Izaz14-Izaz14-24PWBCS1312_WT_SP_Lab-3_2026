@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Selectors Practice</title>
+
+<style>
+
+p{color: darkblue;}
+.box{background-color: lightgray;padding:10px;}
+
+#main-title{color: red;}
+*{font-family: Arial;}
+h2, h3{color: green;}
+input[type="text"]{border:2px solid blue;}
+a[target="_blank"]{color: orange;}
+[class~="highlight"]{
+background-color: yellow;}
+
+div p{font-size:18px;}
+ul > li{color: purple;}
+h2 + p{background-color: #f2f2f2;}
+h3 ~ p{color: brown;}
+a:hover{color:red;}
+input:focus{background-color: lightyellow;}
+li:first-child{font-weight:bold;}
+li:last-child{color:blue;}
+li:nth-child(2){background-color: lightgreen;}
+p::first-letter{font-size:30px;}
+p::after{content:" ✔";color:green;}
+
+</style>
+</head>
+
+<body>
+
+<h1 id="main-title">CSS Selectors Practice</h1>
+
+<h2>Section One</h2>
+<p>This paragraph demonstrates pseudo elements.</p>
+
+<div class="box highlight">
+<p>Paragraph inside div for descendant selector.</p>
+</div>
+
+<h3>Section Two</h3>
+<p>Sibling paragraph example.</p>
+<p>Another paragraph example.</p>
+
+<ul>
+<li>First Item</li>
+<li>Second Item</li>
+<li>Third Item</li>
+</ul>
+
+<br>
+
+<input type="text" placeholder="Enter name">
+<input type="password" placeholder="Enter password">
+
+<br><br>
+
+<a href="https://google.com" target="_blank">Open Google</a>
+
+</body>
+</html>
