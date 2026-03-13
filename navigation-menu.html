@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Navigation Menu Demo</title>
+<style>
+body{font-family: Arial;margin:0;}
+.navbar{background:#333;overflow:hidden;}
+.navbar ul{list-style:none;margin:0;padding:0;display:flex;}
+.navbar li{position:relative;}
+.navbar a{display:block;padding:14px 20px;
+color:white;text-decoration:none;transition:0.3s;}
+.navbar a:hover{
+background:#575757;}
+.active{background:#3498db;}
+.dropdown-content{display:none;position:absolute;background:#444;min-width:160px;}
+.dropdown-content a{display:block;}
+.dropdown:hover .dropdown-content{display:block;}
+.vertical-menu{width:200px;margin-top:30px;}
+.vertical-menu a{display:block;background:#eee;padding:12px;text-decoration:none;color:black;border-bottom:1px solid #ccc;transition:0.3s;}
+.vertical-menu a:hover{background:#ccc;}
+@media (max-width:700px){
+.navbar ul{flex-direction:column;}}
+</style>
+</head>
+<body>
+<h2 style="padding:10px;">Horizontal Navigation Menu</h2>
+<div class="navbar">
+<ul>
+<li><a href="#" class="active">Home</a></li>
+<li><a href="#">About</a></li>
+
+<li class="dropdown">
+<a href="#">Services</a>
+
+<div class="dropdown-content">
+<a href="#">Web Design</a>
+<a href="#">SEO</a>
+<a href="#">Marketing</a>
+</div>
+</li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+<h2 style="padding:10px;">Vertical Navigation Menu</h2>
+
+<div class="vertical-menu">
+<a href="#" class="active">Home</a>
+<a href="#">Profile</a>
+<a href="#">Settings</a>
+<a href="#">Logout</a>
+</div>
+</body>
+</html>
