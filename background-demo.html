@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Background Demonstration</title>
+<style>
+body{font-family: Arial;margin: 20px;}
+.solid{background-color: lightblue;padding: 40px;margin-bottom: 20px;}
+.repeat{background-image: url("https://www.transparenttextures.compatternsasfalt-light.png");background-repeat: repeat;padding: 40px;margin-bottom: 20px;}
+
+.no-repeat{background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");background-repeat: no-repeat;background-size: cover;background-position: center;color: white;padding: 40px;margin-bottom: 20px;}
+
+.repeat-x{background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");background-repeat: repeat-x;padding: 40px;margin-bottom: 20px;}
+.repeat-y{background-image: url("https://www.transparenttextures.com/patterns/dots.png");background-repeat: repeat-y;padding: 40px;margin-bottom: 20px;}
+.linear-gradient{background: linear-gradient(to right, red, yellow);padding: 40px;margin-bottom: 20px;}
+.radial-gradient{background: radial-gradient(circle, blue, white);padding: 40px;margin-bottom: 20px;}
+.multiple{background-image:url("https://www.transparenttextures.com/patterns/cubes.png"),linear-gradient(to right, purple, pink);
+background-blend-mode: overlay;padding: 40px;margin-bottom: 20px;color: white;}
+.blend{background-image:url("https://images.unsplash.com/photo-1492724441997-5dc865305da7"),linear-gradient(to right, black, red);background-blend-mode: multiply;background-size: cover;
+color: white;padding: 40px;margin-bottom: 20px;}
+
+</style>
+</head>
+<body>
+<h1>Background Demonstration</h1>
+<div class="solid">
+<h2>Solid Color Background</h2>
+<p>This section uses a simple solid background color.</p>
+</div>
+
+<div class="repeat">
+<h2>Background Image (Repeat)</h2>
+<p>The image repeats across the entire section.</p>
+</div>
+
+<div class="no-repeat">
+<h2>Background Image (No Repeat)</h2>
+<p>The image covers the section and does not repeat.</p>
+</div>
+
+<div class="repeat-x">
+<h2>Background Repeat-X</h2>
+<p>The image repeats horizontally.</p>
+</div>
+
+<div class="repeat-y">
+<h2>Background Repeat-Y</h2>
+<p>The image repeats vertically.</p>
+</div>
+
+<div class="linear-gradient">
+<h2>Linear Gradient</h2>
+<p>This background transitions from red to yellow.</p>
+</div>
+
+<div class="radial-gradient">
+<h2>Radial Gradient</h2>
+<p>This background spreads outward from the center.</p>
+</div>
+
+<div class="multiple">
+<h2>Multiple Background Layers</h2>
+<p>A texture image combined with a gradient.</p>
+</div>
+
+<div class="blend">
+<h2>Background Blend Mode</h2>
+<p>The gradient blends with the background image.</p>
+</div>
+
+</body>
+</html>
