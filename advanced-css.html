@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced CSS Features</title>
+<style>
+body{font-family: Arial;background:#f4f4f4;padding:40px;text-align:center;}
+.gradient-text{font-size:40px;font-weight:bold;background:linear-gradient(to right, #ff512f, #dd2476);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.checkbox-container{display:block;margin:15px;cursor:pointer;}
+.checkbox-container input{display:non}
+.checkmark{width:20px;height:20px;border:2px solid #3498db;display:inline-block;position:relative;margin-right:10px;}
+.checkbox-container input:checked + .checkmark{background:#3498db}
+.checkbox-container input:checked + .checkmark::after{content:"✔";position:absolute;color:white;left:3px;top:-2px;}
+.radio-container{display:block;margin:10px;}
+.radio-container input{display:none;}
+.radio-mark{width:18px;height:18px;border:2px solid #e74c3c;border-radius:50%;display:inline-block;margin-right:10px;}
+.radio-container input:checked + .radio-mark{background:#e74c3c;}
+.loader{margin:30px auto; border:6px solid #eee;border-top:6px solid #3498db;border-radius:50%;width:50px;
+height:50px;animation:spin 1s linear infinite;}
+@keyframes spin{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+.image-text{font-size:60px;font-weight:bold;background:url("https://picsum.photos/800/400");background-size:cover;-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.shadow-text{font-size:35px;color:white;text-shadow:2px 2px 0 #000,4px 4px 5px rgba(0,0,0,0.5),6px 6px 10px rgba(0,0,0,0.3);}
+</style>
+</head>
+<body>
+<h1 class="gradient-text">Gradient Text Effect</h1>
+<h2>Custom Checkbox</h2>
+<label class="checkbox-container">
+<input type="checkbox">
+<span class="checkmark"></span>
+Option 1
+</label>
+<label class="checkbox-container">
+<input type="checkbox">
+<span class="checkmark"></span>
+Option 2
+</label>
+<h2>Custom Radio Buttons</h2>
+<label class="radio-container">
+<input type="radio" name="gender">
+<span class="radio-mark"></span>
+Male
+</label>
+<label class="radio-container">
+<input type="radio" name="gender">
+<span class="radio-mark"></span>
+Female
+</label>
+<h2>CSS Loading Animation</h2>
+<div class="loader"></div>
+<h2>Text Clipping with Image</h2>
+<div class="image-text">CSS MAGIC</div>
+<h2 class="shadow-text">Complex Shadow Effect</h2>
+</body>
+</html>
